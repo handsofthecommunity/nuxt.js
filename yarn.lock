@@ -4374,6 +4374,11 @@ detect-libc@^1.0.2:
   resolved "https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
   integrity sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=
 
+detect-newline@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/detect-newline/-/detect-newline-3.1.0.tgz#576f5dfc63ae1a192ff192d8ad3af6308991b651"
+  integrity sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==
+
 detect-newline@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
@@ -10514,10 +10519,10 @@ rollup-pluginutils@^2.5.0, rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.8.1:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^1.27.9:
-  version "1.27.9"
-  resolved "https://registry.npmjs.org/rollup/-/rollup-1.27.9.tgz#742f1234c1fa935f35149a433807da675b10f9a6"
-  integrity sha512-8AfW4cJTPZfG6EXWwT/ujL4owUsDI1Xl8J1t+hvK4wDX81F5I4IbwP9gvGbHzxnV19fnU4rRABZQwZSX9J402Q==
+rollup@^1.27.10:
+  version "1.27.10"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-1.27.10.tgz#e0814c1401e7658b679d617d3511f0a4ffaea019"
+  integrity sha512-5PjBSKney8zLu7tTn/y4iVBL3OyK+G9rA/wfkcY78bZ9kAMtgNqb8nOfR5KpoDYyt8Vs5o2o8DyDjf9RpwYbAg==
   dependencies:
     "@types/estree" "*"
     "@types/node" "*"
@@ -10689,11 +10694,6 @@ serialize-javascript@^1.3.0, serialize-javascript@^1.7.0:
   version "1.9.1"
   resolved "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-1.9.1.tgz#cfc200aef77b600c47da9bb8149c943e798c2fdb"
   integrity sha512-0Vb/54WJ6k5v8sSWN09S0ora+Hnr+cX40r9F170nT+mSkaxltoE/7R3OrIdBSUv1OoiobH1QoWQbCnAO+e8J1A==
-
-serialize-javascript@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-2.1.1.tgz#952907a04a3e3a75af7f73d92d15e233862048b2"
-  integrity sha512-MPLPRpD4FNqWq9tTIjYG5LesFouDhdyH0EPY3gVK4DRD5+g4aDqdNSzLIwceulo3Yj+PL1bPh6laE5+H6LTcrQ==
 
 serialize-javascript@^2.1.2:
   version "2.1.2"
@@ -10917,12 +10917,13 @@ sort-object-keys@^1.1.2:
   resolved "https://registry.npmjs.org/sort-object-keys/-/sort-object-keys-1.1.2.tgz#d3a6c48dc2ac97e6bc94367696e03f6d09d37952"
   integrity sha1-06bEjcKsl+a8lDZ2luA/bQnTeVI=
 
-sort-package-json@^1.30.0:
-  version "1.30.0"
-  resolved "https://registry.npmjs.org/sort-package-json/-/sort-package-json-1.30.0.tgz#bd7df0261ff10d3708f587defd9fcf81ff0569ec"
-  integrity sha512-1QMmOyfurS1X6PfIGqZTYcGjuCKxki4uMwzw87oAwPQiQeaDdgI7eE5bZN5CSFU5P3Hc2UgV5o4e+wIuhueoOg==
+sort-package-json@^1.31.0:
+  version "1.31.0"
+  resolved "https://registry.npmjs.org/sort-package-json/-/sort-package-json-1.31.0.tgz#778c652b1ee88c15337b258d3ae7e47576e4fb88"
+  integrity sha512-zBdnTpMCJNZszbPcAbGIAgfRQ0A0dF/ZOsQdUHICZ6XLuIQK1Mcwp8zfkF3ySg2lT2oKxU4dVhh/9tZxGLBU0A==
   dependencies:
     detect-indent "^6.0.0"
+    detect-newline "3.1.0"
     glob "^7.1.6"
     sort-object-keys "^1.1.2"
 
@@ -11494,16 +11495,16 @@ terser-webpack-plugin@^1.4.1:
     webpack-sources "^1.4.0"
     worker-farm "^1.7.0"
 
-terser-webpack-plugin@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-2.2.2.tgz#2a6e00237125564a455ad69b22e08ee59420473a"
-  integrity sha512-/CHMNswPMAwuD2kd++qys8UmBRmsshPSzHw4BlDwurPtK9YjeK93OV89YWkJulHk972cs07K/7Z92V6PNjWF8A==
+terser-webpack-plugin@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-2.2.3.tgz#7b070b40e39ef177ca062a4b6d70c3acdd85defc"
+  integrity sha512-R8cqQDld4BjVKaIR0D9Q0O/QzfgXzME3wXfSxxW23ZGv5xpMDUt1NEnCuG94y1+bKASLvc5TjIHLlNo0eK8GLA==
   dependencies:
     cacache "^13.0.1"
     find-cache-dir "^3.1.0"
     jest-worker "^24.9.0"
     schema-utils "^2.6.1"
-    serialize-javascript "^2.1.1"
+    serialize-javascript "^2.1.2"
     source-map "^0.6.1"
     terser "^4.4.2"
     webpack-sources "^1.4.3"
